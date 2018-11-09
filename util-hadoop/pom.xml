@@ -29,7 +29,6 @@
   <name>util-hadoop-${hadoop.identifier}</name>
 
   <artifactId>util-hadoop</artifactId>
-  <version>${hadoop.identifier}-2.0.0-SNAPSHOT</version>
 
   <profiles>
     <profile>
