@@ -90,7 +90,7 @@
     <google.guava.version>27.0.1-jre</google.guava.version>
     <google.truth.version>0.42</google.truth.version>
     <hadoop.two.version>2.9.2</hadoop.two.version>
-    <hadoop.three.version>3.1.1.7.0.0.0-327</hadoop.three.version>
+    <hadoop.three.version>3.1.1.7.0.0.0-328</hadoop.three.version>
     <junit.version>4.13-beta-1</junit.version>
     <mockito.version>2.27.0</mockito.version>
   </properties>
