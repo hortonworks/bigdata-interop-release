@@ -8,6 +8,7 @@ import com.google.cloud.hadoop.gcsio.GoogleCloudStorage;
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.fs.contract.AbstractContractConcatTest;
 import org.apache.hadoop.fs.contract.ContractTestUtils;
+
 import org.junit.Test;
 
 public abstract class AbstractGoogleContractConcatTest extends AbstractContractConcatTest {
@@ -33,4 +34,7 @@ public abstract class AbstractGoogleContractConcatTest extends AbstractContractC
     ContractTestUtils.validateFileContent(
         ContractTestUtils.readDataset(getFileSystem(), target, TEST_FILE_LEN * numFiles), blocks);
   }
+
+  public void testFileSystemDeclaresCapability() throws Throwable {
+    ContractTestUtils.skip("FileSystem capability not implemented in GCS.");  }
 }

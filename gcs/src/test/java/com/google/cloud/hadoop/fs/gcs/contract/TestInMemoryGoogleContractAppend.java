@@ -18,6 +18,7 @@ import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.contract.AbstractContractAppendTest;
 import org.apache.hadoop.fs.contract.AbstractFSContract;
 import org.apache.hadoop.fs.contract.ContractTestUtils;
+
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
@@ -32,5 +33,9 @@ public class TestInMemoryGoogleContractAppend extends AbstractContractAppendTest
   @Override
   public void testRenameFileBeingAppended() throws Throwable {
     ContractTestUtils.skip("blobstores can not rename file that being appended");
+  }
+
+  public void testFileSystemDeclaresCapability() throws Throwable {
+    ContractTestUtils.skip("FileSystem capability not implemented in GCS.");
   }
 }
